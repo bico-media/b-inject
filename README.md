@@ -16,7 +16,7 @@ If you provide content from the blockchain you are compatible with the B://andle
 
 - The text `{{B://[TX]/}}` will be replaced with the B://andlebar converted content of the TX (nested injections)
 
-**Please help shape the actional definition of v1 here: https://github.com/bico-media/bandlebars/pull/1**
+**Please help shape the actual protocol description of v1 here: https://github.com/bico-media/bandlebars/pull/1**
 
 ### v1+
 
@@ -28,7 +28,7 @@ If you provide content from the blockchain you are compatible with the B://andle
 
 - The text `{{B:\\TX}}` will be replaced with the text `{{B://TX}}` in the final content presented to a client 
 
-**Please help shape the actional definition of v1+ here: https://github.com/bico-media/bandlebars/pull/4**
+**Please help shape the actual protocol description of v1+ here: https://github.com/bico-media/bandlebars/pull/4**
 
 
 ### v2
@@ -45,7 +45,7 @@ If you provide content from the blockchain you are compatible with the B://andle
 
 The protocol does not provide how a content provider lets a client indicate what TX to target
 
-**Please help shape the actional definition of v2 here: https://github.com/bico-media/bandlebars/pull/2**
+**Please help shape the actual protocol description of v2 here: https://github.com/bico-media/bandlebars/pull/2**
 
 
 
@@ -57,11 +57,11 @@ If you provide content from the blockchain you are compatible with the B://andle
 
 - Are compatible with the B://andlebars protocol v2
 
-- Have a way of letting the client indicate a sequence of open injections to replace (`{{B://xyz1}}{{B://xyz2}}{{B://xyz3}}` to be replaced with TX1, TX2 and TX3)
+- Have a way of letting the client indicate several open injections (like `{{B://xyz1}}{{B://xyz2/}}{{B://xyz3}}`) to be replaced with TX1, TX2 and TX3
 
 The protocol does not provide how a content provider lets a client indicate what TXs to target.
 
-**Please help shape the actional definition of v3 here: https://github.com/bico-media/bandlebars/pull/3**
+**Please help shape the actual protocol description of v3 here: https://github.com/bico-media/bandlebars/pull/3**
 
 
 
