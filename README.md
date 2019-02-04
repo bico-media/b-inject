@@ -1,45 +1,50 @@
-# Dynamic data from a static blockchain
+# Dynamic content from a static blockchain
 
-> Lets get a common way of indicating that content in one transaction is to be placed within content from another transaction
+> Lets get a shared way of indicating that content in one transaction is to be placed within content from another transaction.
 
-This repo contains the definition for the protocol B://andlebars (pronounced bandlebars). 
+This document describes a protocol named "B://andlebars" (pronounced bandlebars).
+Please share [inputs and comments](https://github.com/bico-media/bandlebars/issues).
 
-## High-level description
 
-### v1
 
-_Direct injection_
+## Overview
 
-If you provide content from the blockchain you are compatible with the B://andlebars protocol v1 if
+### B://andlebar v1
 
-- The text `{{B://[TX]}}` will be replaced with the raw unprocessed content of TX
+B://andlebar v1 describes "direct injections". In short: 
 
-- The text `{{B://[TX]/}}` will be replaced with the B://andlebar converted content of the TX (nested injections)
+> - The text `{{B://[TX]}}` will be replaced with the raw unprocessed content of TX
+>
+> - The text `{{B://[TX]/}}` will be replaced with the B://andlebar converted content of the TX (nested injections)
+
+See [bandlebars.bico.media/v1](//bandlebars.bico.media/v1) for more information.
 
 **Please help shape the actual protocol description of v1 here: https://github.com/bico-media/bandlebars/pull/1**
 
-### v1+
+### B://andlebar v1+
 
-_Talking about direct injections_
+B://andlebar v1 describes "How to talking about direct injections using direct injections". In short:_
 
-If you provide content from the blockchain you are compatible with the B://andlebars protocol v1+ if you
 
-- Are compatible with the B://andlebar protocol v1
+> - The text `{{B:\\TX}}` will be replaced with the text `{{B://TX}}` in the final content presented to a client 
 
-- The text `{{B:\\TX}}` will be replaced with the text `{{B://TX}}` in the final content presented to a client 
+See [banlebars.bico.media/v1](//bandlebars.bico.media/v1-plus) for more information.
 
 **Please help shape the actual protocol description of v1+ here: https://github.com/bico-media/bandlebars/pull/4**
 
 
-### v2
+### B://andlebar v2
 
-_Open injection_
+B://andlebar v2 describes "open injections". In short: 
 
-If you provide content from the blockchain you are compatible with the B://andlebars protocol v2 if you
+> - Have a way for the client to indicate that the text `{{B://xyz}}` will be replaced with the raw unprocessed content of one specific other TX
+> 
+> - Have a way for the client to indicate that the text `{{B://xyz/}}` will be replaced with the B://andlebars treated content of the TX (nested injections)
 
-- Are compatible with the B://andlebar protocol v1 or v1+
+See [bandlebars.bico.media/v1](//bandlebars.bico.media/v2) for more information.
 
-- Have a way for the client to indicate that the text `{{B://xyz}}` will be replaced with the raw unprocessed content of one specific other TX
+
+### B://andlebar v3
 
 - Have a way for the client to indicate that the text `{{B://xyz/}}` will be replaced with the B://andlebars treated content of the TX (nested injections)
 
@@ -49,19 +54,17 @@ The protocol does not provide how a content provider lets a client indicate what
 
 
 
-### v3
+
 
 _Multiple open injections_
 
-If you provide content from the blockchain you are compatible with the B://andlebars protocol v3 if you
+B://andlebar v3 describes "Multiple open injections". In short: 
 
-- Are compatible with the B://andlebars protocol v2
+> - Have a way of letting the client indicate a sequence of open injections to replace (`{{B://xyz1}}{{B://xyz2}}{{B://xyz3}}` to be replaced with TX1, TX2 and TX3)
 
-- Have a way of letting the client indicate several open injections (like `{{B://xyz1}}{{B://xyz2/}}{{B://xyz3}}`) to be replaced with TX1, TX2 and TX3
+See [bandlebars.bico.media/v1](//bandlebars.bico.media/v3) for more information.
 
-The protocol does not provide how a content provider lets a client indicate what TXs to target.
+----
 
-**Please help shape the actual protocol description of v3 here: https://github.com/bico-media/bandlebars/pull/3**
-
-
+Please share [inputs and comments](https://github.com/bico-media/bandlebars/issues).
 
