@@ -1,11 +1,9 @@
 # Dynamic content from a static blockchain
 
-> Lets get a shared way of indicating that content in one transaction is to be placed within content from another transaction.
+> Let's get a shared way of indicating that content in one transaction is to be placed within content from another transaction.
 
 This document describes a protocol named "B://andlebars" (pronounced bandlebars).
 Please share [inputs and comments](https://github.com/bico-media/bandlebars/issues).
-
-
 
 ## Overview
 
@@ -19,7 +17,6 @@ B://andlebar v1 describes "direct injections". In short:
 
 See [bandlebars.bico.media/v1](//bandlebars.bico.media/v1) for more information.
 
-**Please help shape the actual protocol description of v1 here: https://github.com/bico-media/bandlebars/pull/1**
 
 ### B://andlebar v1+
 
@@ -28,9 +25,7 @@ B://andlebar v1 describes "How to talking about direct injections using direct i
 
 > - The text `{{B:\\TX}}` will be replaced with the text `{{B://TX}}` in the final content presented to a client 
 
-See [banlebars.bico.media/v1](//bandlebars.bico.media/v1-plus) for more information.
-
-**Please help shape the actual protocol description of v1+ here: https://github.com/bico-media/bandlebars/pull/4**
+See [bandlebars.bico.media/v1-plus](//bandlebars.bico.media/v1-plus) for more information.
 
 
 ### B://andlebar v2
@@ -39,30 +34,19 @@ B://andlebar v2 describes "open injections". In short:
 
 > - Have a way for the client to indicate that the text `{{B://xyz}}` will be replaced with the raw unprocessed content of one specific other TX
 > 
-> - Have a way for the client to indicate that the text `{{B://xyz/}}` will be replaced with the B://andlebars treated content of the TX (nested injections)
+> - Have a way for the client to indicate that the text `{{B://xyz/}}` will be replaced with the B://andlebars treated content of of one specific other TX (nested injections)
 
-See [bandlebars.bico.media/v1](//bandlebars.bico.media/v2) for more information.
+See [bandlebars.bico.media/v2](//bandlebars.bico.media/v2) for more information.
+
 
 
 ### B://andlebar v3
 
-- Have a way for the client to indicate that the text `{{B://xyz/}}` will be replaced with the B://andlebars treated content of the TX (nested injections)
-
-The protocol does not provide how a content provider lets a client indicate what TX to target
-
-**Please help shape the actual protocol description of v2 here: https://github.com/bico-media/bandlebars/pull/2**
-
-
-
-
-
-_Multiple open injections_
-
 B://andlebar v3 describes "Multiple open injections". In short: 
 
-> - Have a way of letting the client indicate a sequence of open injections to replace (`{{B://xyz1}}{{B://xyz2}}{{B://xyz3}}` to be replaced with TX1, TX2 and TX3)
+> - Have a way of letting the client indicate a sequence of open injections to replace (i.e `{{B://xyz1}}{{B://xyz2}}{{B://xyz3}}` to be replaced with TX1, TX2 and TX3)
 
-See [bandlebars.bico.media/v1](//bandlebars.bico.media/v3) for more information.
+See [bandlebars.bico.media/v3](//bandlebars.bico.media/v3) for more information.
 
 ----
 
