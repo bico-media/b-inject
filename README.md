@@ -15,7 +15,7 @@ B://andlebar v1 describes "direct injections". In short:
 >
 > - The text `{{B://[TX]/}}` will be replaced with the B://andlebar converted content of the TX (nested injections)
 
-See [bandlebars.bico.media/v1](//bandlebars.bico.media/v1) for more information.
+See [bandlebars.bico.media/v1](http://bandlebars.bico.media/v1) for more information.
 
 
 ### B://andlebar v1+
@@ -25,7 +25,7 @@ B://andlebar v1 describes "How to talking about direct injections using direct i
 
 > - The text `{{B:\\TX}}` will be replaced with the text `{{B://TX}}` in the final content presented to a client 
 
-See [bandlebars.bico.media/v1-plus](//bandlebars.bico.media/v1-plus) for more information.
+See [bandlebars.bico.media/v1-plus](http://bandlebars.bico.media/v1-plus) for more information.
 
 
 ### B://andlebar v2
@@ -36,7 +36,7 @@ B://andlebar v2 describes "open injections". In short:
 > 
 > - Have a way for the client to indicate that the text `{{B://xyz/}}` will be replaced with the B://andlebars treated content of of one specific other TX (nested injections)
 
-See [bandlebars.bico.media/v2](//bandlebars.bico.media/v2) for more information.
+See [bandlebars.bico.media/v2](http://bandlebars.bico.media/v2) for more information.
 
 
 
@@ -46,7 +46,7 @@ B://andlebar v3 describes "Multiple open injections". In short:
 
 > - Have a way of letting the client indicate a sequence of open injections to replace (i.e `{{B://xyz1}}{{B://xyz2}}{{B://xyz3}}` to be replaced with TX1, TX2 and TX3)
 
-See [bandlebars.bico.media/v3](//bandlebars.bico.media/v3) for more information.
+See [bandlebars.bico.media/v3](http://bandlebars.bico.media/v3) for more information.
 
 ----
 
