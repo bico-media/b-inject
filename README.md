@@ -7,9 +7,9 @@ Please share [inputs and comments](https://github.com/bico-media/bandlebars/issu
 
 ## Overview
 
-### B://andlebar v1
+### Version 1
 
-B://andlebar v1 describes "direct injections". In short: 
+The protocol B://andlebar v1 describes "direct injections". In short: 
 
 > The text `{{B://[TX]}}` will be replaced with the raw unprocessed content of TX
 >
@@ -18,9 +18,9 @@ B://andlebar v1 describes "direct injections". In short:
 See [bandlebars.bico.media/v1](http://bandlebars.bico.media/v1) for more information.
 
 
-### B://andlebar v1+
+### Version 1 plus
 
-B://andlebar v1 describes "How to talking about direct injections using direct injections". In short:_
+The protocol B://andlebar v1+ describes "How to talking about direct injections using direct injections". In short:_
 
 
 > The text `{{B:\\TX}}` will be replaced with the text `{{B://TX}}` in the final content presented to a client 
@@ -28,9 +28,9 @@ B://andlebar v1 describes "How to talking about direct injections using direct i
 See [bandlebars.bico.media/v1-plus](http://bandlebars.bico.media/v1-plus) for more information.
 
 
-### B://andlebar v2
+### Version 2
 
-B://andlebar v2 describes "open injections". In short: 
+The protocol B://andlebar v2 describes "open injections". In short: 
 
 > Have a way for the client to indicate that the text `{{B://xyz}}` will be replaced with the raw unprocessed content of one specific other TX
 > 
@@ -40,9 +40,9 @@ See [bandlebars.bico.media/v2](http://bandlebars.bico.media/v2) for more informa
 
 
 
-### B://andlebar v3
+### Version 3
 
-B://andlebar v3 describes "Multiple open injections". In short: 
+The protocol B://andlebar v3 describes "Multiple open injections". In short: 
 
 > Have a way of letting the client indicate a sequence of open injections to replace (i.e `{{B://xyz1}}{{B://xyz2}}{{B://xyz3}}` to be replaced with TX1, TX2 and TX3)
 
