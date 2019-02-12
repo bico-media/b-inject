@@ -1,3 +1,5 @@
+Status: _idea_ → __lose draft__ → _draft_ → _proposal_ → _final review_ → _stable_
+
 # Dynamic content from a static blockchain
 
 > Let's get a shared way of indicating that content in one transaction is to be placed within content from another transaction.
